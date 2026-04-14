@@ -1,0 +1,18 @@
+@use '../../styles/variaveis';
+
+.botao {
+    background-color: variaveis.$color-green-100;
+    border-radius: 8px;
+    border: none;
+    color: variaveis.$color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: variaveis.$color-green-200;
+    }
+    img {
+        display: block;
+        margin: 4px;
+    }
+}

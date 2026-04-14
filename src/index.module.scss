@@ -1,0 +1,6 @@
+@use './styles/variaveis';
+
+body{
+  background-color: variaveis.$color-gray-400;
+  font-family: variaveis.$font;
+}

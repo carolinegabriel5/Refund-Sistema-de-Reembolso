@@ -1,0 +1,116 @@
+@use '../../styles/variaveis';
+
+.container {
+    width: 40%;
+    margin: auto;
+    background-color: variaveis.$color-white;
+    border-radius: 16px;
+    padding: 40px;
+    h1 {
+        font-size: 20px;
+        color: variaveis.$color-gray-100;
+        font-weight: 700;
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
+        color: variaveis.$color-gray-200;
+        font-weight: 400;
+        margin-top: 12px;
+        margin-bottom: 40px;
+    }
+    form {
+        label {
+            font-size: 10px;
+            color: variaveis.$color-gray-200;
+            font-weight: 400;
+        }
+        input {
+            border: 1px solid variaveis.$color-gray-300;
+            border-radius: 8px;
+            font-size: 14px;
+            color: variaveis.$color-gray-100;
+            padding: 15px;
+            background-color: variaveis.$color-white;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            &[type="text"]{
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        .categoria__valor {
+            display: flex;
+            gap: 16px;
+            .categoria {
+                width: 70%;
+                select {
+                    border: 1px solid variaveis.$color-gray-300;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    color: variaveis.$color-gray-100;
+                    padding: 15px;
+                    background-color: variaveis.$color-white;
+                    margin-top: 8px;
+                    margin-bottom: 32px;
+                    width: 100%;
+                }
+            }
+            .valor {
+                width: 20%;
+                box-sizing: border-box;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        .abrir__comprovante {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            margin-top: 12px;
+            margin-bottom: 28px;
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                color: variaveis.$color-green-100;
+                margin: 0;
+            }
+        }
+        .arquivo {
+            width: 100%;
+            .arquivo__input {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border: 1px solid variaveis.$color-gray-300;
+                border-radius: 8px;
+                font-size: 14px;
+                color: variaveis.$color-gray-100;
+                background-color: variaveis.$color-white;
+                margin-top: 8px;
+                margin-bottom: 32px;
+                span {
+                    margin: 15px;
+                }
+                label {
+                    background-color: variaveis.$color-green-100;
+                    border-radius: 8px;
+                    border: none;
+                    color: variaveis.$color-white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 48px;
+                    height: 48px;
+                    margin-right: -1px;
+                }
+                input {
+                    display: none;
+                }
+            }
+        }
+    }
+}

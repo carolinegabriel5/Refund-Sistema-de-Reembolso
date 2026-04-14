@@ -1,0 +1,56 @@
+@use '../../../styles/variaveis';
+
+.solicitacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    .solicitacao__dados {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        .icone {
+            border-radius: 50%;
+            background-color: variaveis.$color-gray-400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .solicitacao__dados__nome {
+            h3 {
+                font-size: 14px;
+                font-weight: 700;
+                color: variaveis.$color-gray-100;
+                margin: 0;
+            }
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                color: variaveis.$color-gray-200;
+                margin: 0;
+            }
+        }
+    }
+    .solicitacao__valores {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: variaveis.$color-gray-200;
+            margin: 0;
+        }
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: variaveis.$color-gray-100;
+            margin: 0;
+        }
+    }
+}
