@@ -1,0 +1,46 @@
+@use '../../styles/variaveis';
+
+label {
+    font-size: 10px;
+    color: variaveis.$color-gray-200;
+    font-weight: 400;
+}
+input {
+    border: 1px solid variaveis.$color-gray-300;
+    border-radius: 8px;
+    font-size: 14px;
+    color: variaveis.$color-gray-100;
+    padding: 15px;
+    background-color: variaveis.$color-white;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    &[type="text"]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.categoria__valor {
+    display: flex;
+    gap: 16px;
+    .categoria {
+        width: 70%;
+        select {
+            border: 1px solid variaveis.$color-gray-300;
+            border-radius: 8px;
+            font-size: 14px;
+            color: variaveis.$color-gray-100;
+            padding: 15px;
+            background-color: variaveis.$color-white;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            width: 100%;
+        }
+    }
+    .valor {
+        width: 20%;
+        box-sizing: border-box;
+        input {
+            width: 100%;
+        }
+    }
+}
