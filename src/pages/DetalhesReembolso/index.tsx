@@ -2,14 +2,15 @@ import styles from './DetalhesReembolso.module.scss'
 import arquivo from '../../assets/icons/arquivo.svg'
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Inputs from '../../components/Inputs';
-import { solicitacoes } from '../Solicitacoes';
 import { useState } from 'react';
+import { useSolicitacoes } from '../../context/SolicitacoesContext';
 
 export default function DetalhesReembolso() {
+    const { solicitacoes } = useSolicitacoes();
     const navigate = useNavigate();
     const [mostrarPopup, setMostrarPopup] = useState(false);
     const { id } = useParams();
-    const solicitacao = solicitacoes.find(item => item.id === id);
+    const solicitacaoSelecionada = solicitacoes.find(s => s.id === id);
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -30,8 +31,8 @@ export default function DetalhesReembolso() {
             <h1>Solicitação de reembolso</h1>
             <p>Dados da despesa para solicitar reembolso.</p>
             <form>
-                <Inputs isRealonly={true} dadosReembolso={solicitacao}/>
-                <Link className={styles.abrir__comprovante} to={solicitacao!.nome ?? "#"}>
+                <Inputs isRealonly={true} dadosReembolso={solicitacaoSelecionada}/>
+                <Link className={styles.abrir__comprovante} to='#'>
                     <img src={arquivo} alt='arquivo'/>
                     <p>Abrir comprovante</p>
                 </Link> 

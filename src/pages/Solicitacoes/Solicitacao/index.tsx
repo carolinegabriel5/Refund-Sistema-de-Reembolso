@@ -3,6 +3,7 @@ import alimentacaoIcon from '../../../assets/icons/alimentacao.png'
 import transporteIcon from '../../../assets/icons/transporte.png'
 import hospedagemIcon from '../../../assets/icons/hospedagem.png'
 import servicosIcon from '../../../assets/icons/servicos.png'
+import outrosIcon from '../../../assets/icons/outros.png'
 import { Link } from 'react-router-dom';
 
 export default function Solicitacao({categoria, nome, valor, id}: {categoria:string, nome: string, valor:number, id:string}) {
@@ -11,7 +12,8 @@ export default function Solicitacao({categoria, nome, valor, id}: {categoria:str
         alimentacao: alimentacaoIcon,
         transporte: transporteIcon,
         hospedagem: hospedagemIcon,
-        servicos: servicosIcon
+        servicos: servicosIcon,
+        outros: outrosIcon
     }
     return (
         <Link to={`/detalhes-reembolso/${id}`} style={{ textDecoration: 'none' }}>
