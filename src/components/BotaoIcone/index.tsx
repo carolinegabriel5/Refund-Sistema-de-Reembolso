@@ -1,16 +1,16 @@
-import styles from './BotaoIcone.module.scss'
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+    import styles from './BotaoIcone.module.scss'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
-}
+    interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+        children: React.ReactNode;
+    }
 
-const BotaoIcone = ({children}:ButtonProps) => {
-    return (
-        <button className={styles.botao}>
-            {children}
-        </button>
-    )
-}
 
-export default BotaoIcone;
+    const BotaoIcone = ({children, ...props}:ButtonProps) => {
+        return (
+            <button className={styles.botao}  {...props}>
+                {children}
+            </button>
+        )
+    }
+
+    export default BotaoIcone;

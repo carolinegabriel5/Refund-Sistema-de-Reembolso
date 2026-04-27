@@ -59,6 +59,12 @@
                 color: variaveis.$color-green-100;
                 margin: 0;
             }
+            cursor: pointer;
+            &:hover {
+                p {
+                    text-decoration: underline;
+                }
+            }
         }
         .arquivo {
             width: 100%;

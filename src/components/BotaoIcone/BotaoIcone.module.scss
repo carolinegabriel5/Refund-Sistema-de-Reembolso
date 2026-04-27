@@ -15,4 +15,8 @@
         display: block;
         margin: 4px;
     }
+    &:disabled{
+        background-color: variaveis.$color-gray-300;
+        cursor: not-allowed;
+    }
 }
