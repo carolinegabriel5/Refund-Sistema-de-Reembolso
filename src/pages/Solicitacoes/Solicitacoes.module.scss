@@ -1,0 +1,38 @@
+@use '../../styles/variaveis';
+
+.solicitacoes {
+    background-color: variaveis.$color-white;
+    border-radius: 16px;
+    margin: 0 142px;
+    padding: 40px;
+    h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: variaveis.$color-gray-100;
+    }
+    .solicitacoes__buscar {
+        display: flex;
+        margin: 24px 0;
+        gap:12px;
+        input {
+            width: 90%;
+            border: 1px solid variaveis.$color-gray-300;
+            border-radius: 8px;
+            padding: 10px;
+            color: variaveis.$color-gray-200;
+            margin-bottom: 0;
+        }
+    }
+    hr {
+        border: 1px solid variaveis.$color-gray-400;
+    }
+    .paginacao {
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: variaveis.$color-gray-100;
+    }
+}

@@ -1,0 +1,25 @@
+@use '../../styles/variaveis';
+
+.container {
+    width: 40%;
+    background-color: variaveis.$color-white;
+    border-radius: 16px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    h1 {
+        font-size: 24px;
+        color: variaveis.$color-green-100;
+        font-weight: 700;
+        margin: 0;
+    }
+    img {
+        margin: 24px auto;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: variaveis.$color-gray-200;
+        margin-bottom: 40px;
+    }
+}
